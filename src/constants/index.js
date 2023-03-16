@@ -31,7 +31,8 @@ import {
   attribution_decision,
   terminal_page,
   xiaoban,
-  nestjs
+  nestjs,
+  smart_system
 } from "../assets";
 
 export const navLinks = [
@@ -160,7 +161,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "August 2021 - Present",
     points: [
-      "Developing data screen applications with Unity 3D",
+      "Developing data screen applications with Unity 3D.",
       "Developing and maintaining web applications using React.js or Vue.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
@@ -303,7 +304,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: smart_foshan,
+    image: smart_system,
     source_code_link: "",
   },
   {
