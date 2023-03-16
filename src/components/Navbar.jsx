@@ -22,8 +22,8 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-14 h-14 object-contain" />
-          <p className="text-white text[18px] font-bold cursor-pointer flex">
-            J &nbsp; <span className="sm:block hidden">| Javascript Mastery</span>
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+            J &nbsp; <span className="sm:block hidden">| Frontend Developer</span>
           </p>
         </Link>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
-            src={toggle ? menu : close}
+            src={!toggle ? menu : close}
             alt="menu"
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => {
@@ -52,7 +52,7 @@ const Navbar = () => {
           />
           <div
             className={`${
-              toggle ? 'hidden' : 'flex'
+              !toggle ? 'hidden' : 'flex'
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">

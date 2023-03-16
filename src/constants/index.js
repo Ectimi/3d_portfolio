@@ -1,4 +1,9 @@
 import {
+  antdesign,
+  ahook,
+  mysql,
+  umi,
+  unity,
   mobile,
   backend,
   creator,
@@ -19,10 +24,14 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+
   threejs,
+  lowcode_platform,
+  smart_foshan,
+  attribution_decision,
+  terminal_page,
+  xiaoban,
+  nestjs
 } from "../assets";
 
 export const navLinks = [
@@ -46,12 +55,12 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Unity Developer",
+    icon: mobile,
   },
   {
     title: "Content Creator",
@@ -81,9 +90,21 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "antdesign",
+    icon: antdesign,
   },
+  {
+    name: "ahook",
+    icon: ahook,
+  },
+  {
+    name: "umi",
+    icon: umi,
+  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -93,49 +114,49 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "Nestjs",
+    icon: nestjs,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "mysql",
+    icon: mysql,
   },
   {
     name: "Three JS",
     icon: threejs,
   },
   {
+    name: "Unity3D",
+    icon: unity,
+  },
+  {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Web And Unity Developer",
+    company_name: "Lnued",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 2021 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing data screen applications with Unity 3D",
+      "Developing and maintaining web applications using React.js or Vue.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -143,28 +164,27 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "TianMa Anti-counterfeiting",
+    icon: starbucks,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "July 2020 - August 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining Development and maintenance of the company's anti-counterfeiting system using Vue.js and other related technologies.",
+      "Build a low-code platform that generates marketing pages from scratch.",
+      "Encapsulates commonly used tool functions and foundational components.",
     ],
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "XiaoBan",
+    icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "July 2019 - May 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and maintaining WeChat nini program and the background management system.",
+      "Development and maintenance of the company's website.",
+      "Use Nodejs to implement the backend interface.",
+      "Optimize the product interface to provide a better experience for users.",
     ],
   },
 ];
@@ -198,58 +218,58 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Low-Code Platform",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Low-Code platform that enable corporate business personnel to quickly generate marketing pages by dragging and dropping.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "antdesign",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "umi",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: lowcode_platform,
+    source_code_link: "https://gitee.com/yangjunjie0806/low-code-platform",
   },
   {
-    name: "Job IT",
+    name: "Attribution Decision",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A decision-making platform for banking and financial business, which can conduct big data analysis based on the data entered by users to help make decisions.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "antdesign",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "icejs",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: attribution_decision,
+    source_code_link: "https://gitee.com/yangjunjie0806/low-code-platform",
   },
   {
-    name: "Trip Guide",
+    name: "Smart Foshan",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A large visualization for data management developed using Unity3D.",
     tags: [
       {
-        name: "nextjs",
+        name: "Unity 3D",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Vue",
         color: "green-text-gradient",
       },
       {
@@ -257,9 +277,65 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: smart_foshan,
+    source_code_link: "",
   },
+  {
+    name: "Smart Management System",
+    description:
+      "A 3D smart point management system that can help customers visualize data intuitively and quickly.",
+    tags: [
+      {
+        name: "Unity 3D",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vue",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: smart_foshan,
+    source_code_link: "",
+  },
+  {
+    name: "Xiao Ban",
+    description:
+      "A wechat mini program for truck drivers, which an automatic weighing applet , drivers can scan the code to achieve self-service truck weighing.",
+    tags: [
+      {
+        name: "Mini Program",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node JS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: xiaoban,
+    source_code_link: "https://github.com/Ectimi/xiaoban",
+  },
+  {
+    name: "Terminal Page(Personal Project)",
+    description:
+      "A command-line style browser home page that allows you to search and manage bookmarks by command.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React Recoil",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: terminal_page,
+    source_code_link: "https://github.com/Ectimi/JTerminal",
+  },
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };

@@ -45,7 +45,7 @@ const About = () => {
       >
         I'm a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Vue, Node.js and
-        Three.js. I'm a quick learner and collaborate closely with clients to
+        Unity. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems.
       </motion.p>
