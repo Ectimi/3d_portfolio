@@ -1,11 +1,11 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useRef, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from '../Loader';
+import useVisible from '@/hooks/useVisible';
 
 const Computers = ({ isMoblie }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
-  console.log('computer',computer)
 
   return (
     <mesh>
@@ -31,6 +31,7 @@ const Computers = ({ isMoblie }) => {
 
 const ComputersCanvas = () => {
   const [isMoblie, setIsMoblie] = useState(false);
+  console.log('com')
 
   useEffect(() => {
     const mediaQuery = window.matchMedia('(max-width: 500px)');

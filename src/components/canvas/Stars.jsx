@@ -1,6 +1,8 @@
 import { useState, useRef, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial, Preload } from '@react-three/drei';
+import CanvasLoader from '../Loader';
+import useVisible from '@/hooks/useVisible';
 import * as random from 'maath/random/dist/maath-random.esm';
 
 const Stars = (props) => {
@@ -30,15 +32,20 @@ const Stars = (props) => {
 };
 
 const StarsCanvas = () => {
-  return (
-    <div className="w-full h-auto absolute inset-0 z-[-1]">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <Suspense fallback={null}>
-          <Stars />
-        </Suspense>
+  const elemRef = useRef();
+  const isVisible = useVisible(elemRef);
 
-        <Preload all />
-      </Canvas>
+  return (
+    <div ref={elemRef} className="w-full h-auto absolute inset-0 z-[-1]">
+      {isVisible && (
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <Suspense fallback={<CanvasLoader />}>
+            <Stars />
+          </Suspense>
+
+          <Preload all />
+        </Canvas>
+      )}
     </div>
   );
 };

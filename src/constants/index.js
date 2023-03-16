@@ -36,6 +36,11 @@ import {
 
 export const navLinks = [
   {
+    id: "blog",
+    title: "Blog",
+    url:'http://124.223.24.47:5502/'
+  },
+  {
     id: "about",
     title: "About",
   },
@@ -105,10 +110,10 @@ const technologies = [
   //   name: "Redux Toolkit",
   //   icon: redux,
   // },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+  // {
+  //   name: "Tailwind CSS",
+  //   icon: tailwind,
+  // },
   {
     name: "Node JS",
     icon: nodejs,
@@ -117,18 +122,18 @@ const technologies = [
     name: "Nestjs",
     icon: nestjs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
   {
     name: "mysql",
     icon: mysql,
   },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "Unity3D",
     icon: unity,
